@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Grenze+Gotisch:wght@100..900&family=Jacquard+24&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --animate-glow: glow 1s ease-in-out infinite;
 
-
-body {
-    font-family: Grenze Gotisch, sans-serif;
+  @keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0px 0px white;
+  }
+  50% {
+    box-shadow: 10px 10px white;
+  }
 }
-
-p {
-    font-family: Elms Sans, sans-serif;
 }
 

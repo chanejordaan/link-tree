@@ -4,36 +4,49 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+         <style type="text/tailwindcss">
+            @theme {
+                --animate-glow: glow 5s ease-in-out infinite;
+
+                @keyframes glow {
+                0%,
+                100% {
+                    box-shadow: 0 0 0 0 oklch(71.8% 0.202 349.761);
+                }
+                50% {
+                    box-shadow: 0 0 10px 4px oklch(71.8% 0.202 349.761);
+                }
+                }
+            }
+  </style>
         <link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.11.0/styles/themes/default.css" />
         <script type="module" src="https://ka-f.webawesome.com/webawesome@3.11.0/webawesome.loader.js"></script>
         <title>Chargo's Links</title>
-        <link rel="stylesheet" href="styles.css">
     </head>
-    <body class="m-8 bg-[#df8fff]">
+    <body class="max-h-screen bg-mist-950 my-8">
         <header class="flex flex-col items-center">
-            <div class="card flex flex-col items-center gap-3 bg-white w-3xs p-4 rounded-md shadow-lg shadow-gray-500">
-                <img src="assets/icon.jpeg" alt="profile-icon" class="w-24 rounded-full m-0 ">
-                <h1 class="text-3xl text-[#0b000b] -mb-2 ">Chargo</h1>
-                <p class="text-sm text-[#200d28] ">DJ / Producer</p>
-                <div class="flex justify-center items-center gap-4 w-full mb-4 text-[#0b000b]">
-                    <a href="https://www.instagram.com/chargo.irl/" target="_blank"><wa-icon name="instagram" family="brands"></wa-icon></a>
-                    <a href="mailto:bookchargo@gmail.com"><wa-icon name="envelope" variant="regular"></wa-icon></a>
-                </div>
-            </div>
+                <img src="assets/icon.jpeg" alt="profile-icon" class="w-24 rounded-full m-4 ">
+                <h1 class="text-3xl text-rose-500 -mb-2 ">Chargo</h1>
+                <p class="text-sm text-mist-100 m-4">DJ / Producer</p>
         </header>
         <main>
             
-            <div class="flex flex-col items-center gap-4 px-4 mt-8" >
-                <p class="-mt-2">♡ Check out my mixes ♡</p>
-                <div class="w-2xs px-4 py-3 text-center bg-[#0b000b] border-2 border-white rounded-full shadow-lg shadow-white text-nowrap">
-                    <a href="https://www.mixcloud.com/Chargo/chargo-live-999rave-13-june-2026/" target="_blank" class="block text-[#fbf0ff] font-display no-underline">Chargo LIVE @ 999:RAVE | June 2026</a>
+            <div class="flex flex-col items-center gap-4 mt-4" >
+                <h2 class="text-mist-100">- Recorded DJ Sets -</h2>
+                <div class="w-2xs px-4 py-3 text-center bg-rose-500 rounded-full shadow-lg text-nowrap animate-glow">
+                    <a href="https://www.mixcloud.com/Chargo/chargo-live-999rave-13-june-2026/" target="_blank" class="block text-[#fbf0ff] font-display no-underline">Chargo LIVE @ 999:RAVE</a>
                 </div>
-                <div class="w-2xs px-4 py-3 text-center bg-[#0b000b] border-2 border-white rounded-full shadow-lg shadow-white text-nowrap">
-                    <a href="https://www.mixcloud.com/Chargo/sara-landry-wannabe/" target="_blank" class="block text-[#fbf0ff] no-underline">Industrial / Schranz | Feb 2026</a>
+                <div class="w-2xs px-4 py-3 text-center bg-rose-500 rounded-full text-nowrap">
+                    <a href="https://www.mixcloud.com/Chargo/sara-landry-wannabe/" target="_blank" class="block text-[#fbf0ff] no-underline">Industrial / Schranz Mix</a>
                 </div>
-                <div class="w-2xs px-4 py-3 text-center bg-[#0b000b] border-2 border-white rounded-full shadow-lg shadow-white text-nowrap">
-                    <a href="https://soundcloud.com/user-956642811/hardgroove-hypnotic-techno-sept-25?si=8cb27fec49fa4a84b6c5e564b9b11d18&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="block text-[#fbf0ff] no-underline">Dark / Groovy | Sept 2025</a>
+                <div class="w-2xs px-4 py-3 text-center bg-rose-500 rounded-full text-nowrap">
+                    <a href="https://soundcloud.com/user-956642811/hardgroove-hypnotic-techno-sept-25?si=8cb27fec49fa4a84b6c5e564b9b11d18&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="block text-[#fbf0ff] no-underline">Dark / Groovy Mix</a>
                 </div>
+        </div>
+        <h3 class="text-mist-100 flex justify-center align-center mt-8">Contact Me</h3>
+        <div class="flex justify-center items-center gap-4 w-full my-2 text-mist-100 text-xl">
+            <a href="https://www.instagram.com/chargo.irl/" target="_blank"><wa-icon name="instagram" family="brands"></wa-icon></a>
+            <a href="mailto:bookchargo@gmail.com"><wa-icon name="envelope" variant="regular"></wa-icon></a>
         </div>
         </main>
     </body>
